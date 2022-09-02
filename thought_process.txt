@@ -1,0 +1,2 @@
+- First I decided to make each social network its own class, there wasn't anything to inherit between the three, besides possibly the username between twitter and facebook, but even that the usernames are formatted differently.
+- 
