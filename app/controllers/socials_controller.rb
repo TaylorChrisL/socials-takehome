@@ -19,13 +19,13 @@ class SocialsController < ApplicationController
     instagram = []
 
     twitter_response.parse.each do |tweet|
-      twitter << Twitter.new(tweet["username"], tweet["tweet"])
+      twitter << tweet["tweet"]
     end
     facebook_response.parse.each do |post|
-      facebook << Facebook.new(post["name"], post["status"])
+      facebook << post["status"]
     end
     instagram_response.parse.each do |post|
-      instagram << Instagram.new(post["username"], post["picture"])
+      instagram << post["picture"]
     end
 
     render json: { twitter: twitter, facebook: facebook, instagram: instagram }
