@@ -1,3 +1,4 @@
 - First I decided to make each social network its own class, there wasn't anything to inherit between the three, besides possibly the username between twitter and facebook, but even that the usernames are formatted differently.
 - Wrote a method to check if response is json and if not pull data again. Could add another layer of validating that the data that is coming through the JSON is valid, but seems unneeded at this point.
 - Started out by reading all the data into classes of data, storing it similar to a database, but that was just overcomplicating the problem and I reverted back to just storing the needed data in arrays to later output
+- Realized I could take it a step further and directly read into my output object.

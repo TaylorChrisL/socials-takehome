@@ -14,21 +14,23 @@ class SocialsController < ApplicationController
       instagram_response = HTTP.get("https://takehome.io/instagram")
       break if valid_response(instagram_response)
     end
-    twitter = []
-    facebook = []
-    instagram = []
+    output = {
+      twitter: [],
+      facebook: [],
+      instagram: [],
+    }
 
     twitter_response.parse.each do |tweet|
-      twitter << tweet["tweet"]
+      output[:twitter] << { tweet: tweet["tweet"] }
     end
     facebook_response.parse.each do |post|
-      facebook << post["status"]
+      output[:facebook] << { status: post["status"] }
     end
     instagram_response.parse.each do |post|
-      instagram << post["picture"]
+      output[:instagram] << { photo: post["picture"] }
     end
 
-    render json: { twitter: twitter, facebook: facebook, instagram: instagram }
+    render json: output
   end
 
   def valid_response(response)
