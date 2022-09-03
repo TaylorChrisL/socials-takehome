@@ -2,17 +2,17 @@ class SocialsController < ApplicationController
   def index
     while true
       twitter_response = HTTP.get("https://takehome.io/twitter")
-      break if valid_response(twitter_response)
+      break if valid_response(twitter_response) && twitter_response.status == 200
     end
 
     while true
       facebook_response = HTTP.get("https://takehome.io/facebook")
-      break if valid_response(facebook_response)
+      break if valid_response(facebook_response) && facebook_response.status == 200
     end
 
     while true
       instagram_response = HTTP.get("https://takehome.io/instagram")
-      break if valid_response(instagram_response)
+      break if valid_response(instagram_response) && instagram_response.status == 200
     end
     output = {
       twitter: [],
