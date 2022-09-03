@@ -1,2 +1,2 @@
 - First I decided to make each social network its own class, there wasn't anything to inherit between the three, besides possibly the username between twitter and facebook, but even that the usernames are formatted differently.
-- 
+- Wrote a method to check if response is json and if not pull data again. Could add another layer of validating that the data that is coming through the JSON is valid, but seems unneeded at this point.
