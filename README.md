@@ -14,7 +14,7 @@ command used for rpsec testing
 bundle exec rake spec
 ```
 
-
+* Also included is a txt file with a few of my thoughts as I was working on this
 
 * Ruby Engineer 60 Minute Challenge
 A client needs to know what is happening on the social networks. All of them. Right now. The three social networks the client is interested in are:
