@@ -1,6 +1,22 @@
 # README
 
-Ruby Engineer 60 Minute Challenge
+* Take Home Assignment
+
+```
+bundle
+rails s
+```
+
+
+command used for rpsec testing
+
+```
+bundle exec rake spec
+```
+
+
+
+* Ruby Engineer 60 Minute Challenge
 A client needs to know what is happening on the social networks. All of them. Right now. The three social networks the client is interested in are:
 ● https://takehome.io/twitter
 ● https://takehome.io/facebook ● https://takehome.io/instagram
