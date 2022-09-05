@@ -3,3 +3,4 @@
 - Started out by reading all the data into classes of data, storing it similar to a database, but that was just overcomplicating the problem and I reverted back to just storing the needed data in arrays to later output
 - Realized I could take it a step further and directly read into my output object. Also realized I wouldnt need templates for this project so removed 'jb' gem.
 - Added validation of response status code being 200, if server for response is down it will currently cause an infinite loop.
+- Added some simple tests with rspec
